@@ -1,0 +1,51 @@
+﻿PASS XLSX inline strings and header mapping
+PASS G option column
+PASS OCR whitespace and question number
+PASS Negation distinguishes similar questions
+PASS Positive question distinguishes similar questions
+PASS Unrelated query has no candidates
+PASS Very short OCR is rejected
+PASS Fuzzy wording changes
+PASS Fuzzy reordered wording
+PASS Fuzzy wording keeps negation
+PASS Fuzzy additions and omissions
+PASS Character fallback recovers broken adjacent pairs
+PASS Numbers distinguish fuzzy technical questions
+PASS CSV quoted multiline and escaped quote
+PASS Malformed CSV is rejected
+PASS User XLSX shared strings, 200 questions and actual columns
+PASS User bank exact retrieval 200/200
+PASS User bank OCR spacing + options retrieval 200/200
+PASS User bank fuzzy query: 电流速段保护是？
+PASS User bank fuzzy query: 电流速断保护
+PASS User bank fuzzy query: 电力系统出现振荡时，哪种保护可能误动？
+PASS User bank fuzzy query: 两相两继电器的不完全星形接法能反应什么故障？
+OCR TEXT: 2 ， 电 流 速 断 保 护 是 （ ） 。 / A. 能 保 护 线 路 全 长 ； / B. 不 能 保 护 线 路 全 长 ； / C. 有 时 能 保 护 线 路 全 长 ；
+PASS Real Windows OCR to user bank answer B
+UI DETAIL: 匹配分数 100 / 100 /  / 电流速断保护是（ ）。 /  / A. 能保护线路全长； / B. 不能保护线路全长； / C. 有时能保护线路全长； /  / 题库答案：B / 对应选项内容：不能保护线路全长； /  / 来源：电气专业试题库（第六周）.xlsx / Sheet1 / 第 3 行 /  / 请按选项内容核对，投屏端的选项顺序可能不同。
+PASS Desktop form manual search shows answer content
+OCR TIMING: init=0 send=0 read=127 worker=125 match=5 display=955
+LIVE STATUS: 屏幕题库助手 / 已导入 200 道题  ·  本地中文 OCR  ·  Excel / CSV / 间隔（秒） / 匹配分数下限 / 区域：未选择 / 相似题候选  ·  点击查看题库答案 / 本次 OCR 文字（实时模式下自动更新） / 手动输入关键词（搜索时暂停实时识别） / 对应题目与题库答案 / 07:16:51 · 1333 ms · 1 个候选 · 分数表示文字相似程度，请核对题干和选项
+LIVE OCR: 2 ． 电 流 速 断 保 护 是 （ ） 。
+A. 能 保 护 线 路 全 长 ；
+B. 不 能 保 护 线 路 全 长 ；
+C. 有 时 能 保 护 线 路 全 长 ；
+LIVE STEP 0: 匹配分数 99 / 100 /  / 电流速断保护是（ ）。 /  / A. 能保护线路全长； / B. 不能保护线路全长； / C. 有时能保护线路全长； /  / 题库答案：B / 对应选项内容：不能保护线路全长； /  / 来源：电气专业试题库（第六周）.xlsx / Sheet1 / 第 3 行 /  / 请按选项内容核对，投屏端的选项顺序可能不同。
+PASS Live screen capture step 0 and stale-answer clearing
+OCR TIMING: init=0 send=0 read=18 worker=17 match=1 display=683
+LIVE STATUS: 屏幕题库助手 / 已导入 200 道题  ·  本地中文 OCR  ·  Excel / CSV / 间隔（秒） / 匹配分数下限 / 区域：未选择 / 相似题候选  ·  点击查看题库答案 / 本次 OCR 文字（实时模式下自动更新） / 手动输入关键词（搜索时暂停实时识别） / 对应题目与题库答案 / 07:16:53 · 991 ms · 1 个候选 · 分数表示文字相似程度，请核对题干和选项
+LIVE OCR: 3 ． 电 力 系 统 发 生 振 荡 时 ，
+A. 电 流 差 动 保 护 ；
+B. 零 序 电 流 速 断 保 护 ；
+C. 电 流 速 断 保 护 。
+（ ） 可 能 会 发 生 误 动 。
+LIVE STEP 1: 匹配分数 92 / 100 /  / 电力系统发生振荡时，（ ）可能会发生误动。 /  / A. 电流差动保护； / B. 零序电流速断保护； / C. 电流速断保护。 /  / 题库答案：C / 对应选项内容：电流速断保护。 /  / 来源：电气专业试题库（第六周）.xlsx / Sheet1 / 第 4 行 /  / 请按选项内容核对，投屏端的选项顺序可能不同。
+PASS Live screen capture step 1 and stale-answer clearing
+OCR TIMING: init=0 send=0 read=5 worker=4
+LIVE STATUS: 屏幕题库助手 / 已导入 200 道题  ·  本地中文 OCR  ·  Excel / CSV / 间隔（秒） / 匹配分数下限 / 区域：未选择 / 相似题候选  ·  点击查看题库答案 / 本次 OCR 文字（实时模式下自动更新） / 手动输入关键词（搜索时暂停实时识别） / 对应题目与题库答案 / 未识别到文字，请调整区域、投屏大小或清晰度。
+LIVE OCR: 
+LIVE STEP 2: 
+PASS Live screen capture step 2 and stale-answer clearing
+PASS Persisted bank restores questions, options and answers
+PASS Excel mapping dialog builds
+Passed: 29; Failed: 0
